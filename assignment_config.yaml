@@ -7,9 +7,14 @@ build:
   - target: default
 
 run:
+
+# I just doubled and halfed these to get random new data
+
 # config 1 (list form) -> ./run.sh 512 256
   - [512, 256]
 # config 2 (list form) -> ./run.sh 1024 512
   - [1024, 512]
 # config 3 (list form) -> ./run.sh 2048 256
   - [2048, 256]
+
+# note I struggeld so hard on getting this to work and walked through it so many times. Ultimately I realized I was running on multiple project mode because I hadn't yet added it to git ....
