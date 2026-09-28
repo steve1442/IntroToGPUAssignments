@@ -1,0 +1,6 @@
+The basic good things are it handles memory using CUDA malloc and free, uses chrono for timing, flexibily handles block and threads.
+
+
+The biggest issue is that it measures kernel launch time and doesnt do a warm up run. So this means its going to have inaccurate measurements due to including the time it takes to initially load the kernel. 
+
+Another potential issue is while it is using malloc and free I think it could fail such that free isn't reached. But Im not 100% sure. 
