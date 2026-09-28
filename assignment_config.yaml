@@ -1,0 +1,15 @@
+
+
+folder: ./module3
+
+build:
+
+  - target: default
+
+run:
+# config 1 (list form) -> ./run.sh 512 256
+  - [512, 256]
+# config 2 (list form) -> ./run.sh 1024 512
+  - [1024, 512]
+# config 3 (list form) -> ./run.sh 2048 256
+  - [2048, 256]

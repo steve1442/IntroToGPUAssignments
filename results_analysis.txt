@@ -1,0 +1,11 @@
+=== PERFORMANCE COMPARISON CHART INSTRUCTIONS ===
+requires matplotlib
+
+python3 debug.py results.csv
+
+then look at the chart.png
+
+THOUGHTS:
+
+The GPU Obviously greatly outperforms the CPU. With smaller data sets the CPU can win though. Additionally we can see that branching has a noticable difference on performance compared to non branching. Although interesting it showed more on the CPU.
+But I think this was just due to the large amount of data it was parsing through.

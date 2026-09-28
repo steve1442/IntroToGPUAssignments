@@ -1,0 +1,5 @@
+Mode,Type,Blocks,ThreadsPerBlock,N,Time_ms
+no_branch,gpu,3907,256,1000192,0.00490496
+with_branch,gpu,3907,256,1000192,0.0068096
+no_branch,cpu,3907,256,1000192,0.0970508
+with_branch,cpu,3907,256,1000192,0.364972
