@@ -1,4 +1,4 @@
-folder: ./module5
+folder: ./module3
 build:
   - target: default
 run:

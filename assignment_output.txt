@@ -1,0 +1,27 @@
+🚀 Project: IntroToGPUAssignments
+ℹ️  On branch 'main' — running git pull...
+✅ git pull complete
+Already up to date.
+🚀 BUILD: executing build.sh --target default
+✅ BUILD completed successfully
+Build successful.
+🚀 RUN [1/3]: executing run.sh 512 256
+✅ RUN [1/3] completed successfully
+RUNNING WITH Total Threads: 512, Block Size: 256
+configuration: 2 numBlocks, 256 blocksize, 512 threads, 512 total
+Time: 0.027680 ms
+Did the copys all calculate propery?: PASS
+🚀 RUN [2/3]: executing run.sh 1024 512
+✅ RUN [2/3] completed successfully
+RUNNING WITH Total Threads: 1024, Block Size: 512
+configuration: 2 numBlocks, 512 blocksize, 1024 threads, 1024 total
+Time: 0.026624 ms
+Did the copys all calculate propery?: PASS
+🚀 RUN [3/3]: executing run.sh 2048 256
+✅ RUN [3/3] completed successfully
+RUNNING WITH Total Threads: 2048, Block Size: 256
+configuration: 8 numBlocks, 256 blocksize, 2048 threads, 2048 total
+Time: 0.025696 ms
+Did the copys all calculate propery?: PASS
+✅ RUN summary: 3/3 configurations succeeded
+ℹ️  Full output written to assignment_output.txt
