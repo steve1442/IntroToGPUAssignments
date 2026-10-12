@@ -7,21 +7,81 @@ Already up to date.
 Build successful.
 🚀 RUN [1/3]: executing run.sh 512 256
 ✅ RUN [1/3] completed successfully
-RUNNING WITH Total Threads: 512, Block Size: 256
-configuration: 2 numBlocks, 256 blocksize, 512 threads, 512 total
-Time: 0.027680 ms
-Did the copys all calculate propery?: PASS
+Running with: Threads=512, BlockSize=256
+ Config: Threads=512 | BlockSize=256 | Runs=3
+
+ Running 3 iterations
+
+ RUN 1/3
+ RUN 2/3
+Sequential: 0.002048 ms
+  Stream 0: 0.003072 ms
+  Stream 1: 0.003072 ms
+  Concurrent (max stream): 0.003072 ms
+
+ RUN 3/3
+Sequential: 0.002880 ms
+  Stream 0: 0.003072 ms
+  Stream 1: 0.002848 ms
+  Concurrent (max stream): 0.003072 ms
+
+ Final Metrics for Config (Threads=512, BlockSize=256):
+   Avg Sequential Time: 0.002464 ms
+   Avg Concurrent Time: 0.003072 ms
+   Seq/Conc:  0.802083x
+
+FINISHED
 🚀 RUN [2/3]: executing run.sh 1024 512
 ✅ RUN [2/3] completed successfully
-RUNNING WITH Total Threads: 1024, Block Size: 512
-configuration: 2 numBlocks, 512 blocksize, 1024 threads, 1024 total
-Time: 0.026624 ms
-Did the copys all calculate propery?: PASS
+Running with: Threads=1024, BlockSize=512
+ Config: Threads=1024 | BlockSize=512 | Runs=3
+
+ Running 3 iterations
+
+ RUN 1/3
+ RUN 2/3
+Sequential: 0.003008 ms
+  Stream 0: 0.003072 ms
+  Stream 1: 0.002048 ms
+  Concurrent (max stream): 0.003072 ms
+
+ RUN 3/3
+Sequential: 0.002944 ms
+  Stream 0: 0.002048 ms
+  Stream 1: 0.002944 ms
+  Concurrent (max stream): 0.002944 ms
+
+ Final Metrics for Config (Threads=1024, BlockSize=512):
+   Avg Sequential Time: 0.002976 ms
+   Avg Concurrent Time: 0.003008 ms
+   Seq/Conc:  0.989362x
+
+FINISHED
 🚀 RUN [3/3]: executing run.sh 2048 256
 ✅ RUN [3/3] completed successfully
-RUNNING WITH Total Threads: 2048, Block Size: 256
-configuration: 8 numBlocks, 256 blocksize, 2048 threads, 2048 total
-Time: 0.025696 ms
-Did the copys all calculate propery?: PASS
+Running with: Threads=2048, BlockSize=256
+ Config: Threads=2048 | BlockSize=256 | Runs=3
+
+ Running 3 iterations
+
+ RUN 1/3
+ RUN 2/3
+Sequential: 0.002816 ms
+  Stream 0: 0.002368 ms
+  Stream 1: 0.002048 ms
+  Concurrent (max stream): 0.002368 ms
+
+ RUN 3/3
+Sequential: 0.003072 ms
+  Stream 0: 0.002880 ms
+  Stream 1: 0.002880 ms
+  Concurrent (max stream): 0.002880 ms
+
+ Final Metrics for Config (Threads=2048, BlockSize=256):
+   Avg Sequential Time: 0.002944 ms
+   Avg Concurrent Time: 0.002624 ms
+   Seq/Conc:  1.121951x
+
+FINISHED
 ✅ RUN summary: 3/3 configurations succeeded
 ℹ️  Full output written to assignment_output.txt
