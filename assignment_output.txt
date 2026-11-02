@@ -4,84 +4,55 @@
 Already up to date.
 🚀 BUILD: executing build.sh --target default
 ✅ BUILD completed successfully
-Build successful.
+ Building
+Build complete. Executable: ./main
 🚀 RUN [1/3]: executing run.sh 512 256
 ✅ RUN [1/3] completed successfully
-Running with: Threads=512, BlockSize=256
- Config: Threads=512 | BlockSize=256 | Runs=3
-
- Running 3 iterations
-
- RUN 1/3
- RUN 2/3
-Sequential: 0.002048 ms
-  Stream 0: 0.003072 ms
-  Stream 1: 0.003072 ms
-  Concurrent (max stream): 0.003072 ms
-
- RUN 3/3
-Sequential: 0.002880 ms
-  Stream 0: 0.003072 ms
-  Stream 1: 0.002848 ms
-  Concurrent (max stream): 0.003072 ms
-
- Final Metrics for Config (Threads=512, BlockSize=256):
-   Avg Sequential Time: 0.002464 ms
-   Avg Concurrent Time: 0.003072 ms
-   Seq/Conc:  0.802083x
-
-FINISHED
-🚀 RUN [2/3]: executing run.sh 1024 512
+Running Linear Solver Validation
+   Config: Matrix=1024, Threads=512, Block=256
+   Running 3 test cases
+----------------------------------------
+Matrix Size: 1024
+Config: Threads=512, Block Size Parameter=256
+Residual L2 Norm: 0.000275664
+Matrix Size: 1024
+Config: Threads=512, Block Size Parameter=256
+Residual L2 Norm: 0.000275664
+Matrix Size: 1024
+Config: Threads=512, Block Size Parameter=256
+Residual L2 Norm: 0.000275664
+passed
+🚀 RUN [2/3]: executing run.sh 1024 256
 ✅ RUN [2/3] completed successfully
-Running with: Threads=1024, BlockSize=512
- Config: Threads=1024 | BlockSize=512 | Runs=3
-
- Running 3 iterations
-
- RUN 1/3
- RUN 2/3
-Sequential: 0.003008 ms
-  Stream 0: 0.003072 ms
-  Stream 1: 0.002048 ms
-  Concurrent (max stream): 0.003072 ms
-
- RUN 3/3
-Sequential: 0.002944 ms
-  Stream 0: 0.002048 ms
-  Stream 1: 0.002944 ms
-  Concurrent (max stream): 0.002944 ms
-
- Final Metrics for Config (Threads=1024, BlockSize=512):
-   Avg Sequential Time: 0.002976 ms
-   Avg Concurrent Time: 0.003008 ms
-   Seq/Conc:  0.989362x
-
-FINISHED
+Running Linear Solver Validation
+   Config: Matrix=1024, Threads=1024, Block=256
+   Running 3 test cases
+----------------------------------------
+Matrix Size: 1024
+Config: Threads=1024, Block Size Parameter=256
+Residual L2 Norm: 0.000365587
+Matrix Size: 1024
+Config: Threads=1024, Block Size Parameter=256
+Residual L2 Norm: 0.000365587
+Matrix Size: 1024
+Config: Threads=1024, Block Size Parameter=256
+Residual L2 Norm: 0.000365587
+passed
 🚀 RUN [3/3]: executing run.sh 2048 256
 ✅ RUN [3/3] completed successfully
-Running with: Threads=2048, BlockSize=256
- Config: Threads=2048 | BlockSize=256 | Runs=3
-
- Running 3 iterations
-
- RUN 1/3
- RUN 2/3
-Sequential: 0.002816 ms
-  Stream 0: 0.002368 ms
-  Stream 1: 0.002048 ms
-  Concurrent (max stream): 0.002368 ms
-
- RUN 3/3
-Sequential: 0.003072 ms
-  Stream 0: 0.002880 ms
-  Stream 1: 0.002880 ms
-  Concurrent (max stream): 0.002880 ms
-
- Final Metrics for Config (Threads=2048, BlockSize=256):
-   Avg Sequential Time: 0.002944 ms
-   Avg Concurrent Time: 0.002624 ms
-   Seq/Conc:  1.121951x
-
-FINISHED
+Running Linear Solver Validation
+   Config: Matrix=1024, Threads=2048, Block=256
+   Running 3 test cases
+----------------------------------------
+Matrix Size: 1024
+Config: Threads=2048, Block Size Parameter=256
+Residual L2 Norm: 0
+Matrix Size: 1024
+Config: Threads=2048, Block Size Parameter=256
+Residual L2 Norm: 0
+Matrix Size: 1024
+Config: Threads=2048, Block Size Parameter=256
+Residual L2 Norm: 0
+passed
 ✅ RUN summary: 3/3 configurations succeeded
 ℹ️  Full output written to assignment_output.txt
