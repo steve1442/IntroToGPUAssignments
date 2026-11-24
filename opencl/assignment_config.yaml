@@ -1,0 +1,8 @@
+folder: ./opencl
+build:
+  - target: default
+run:
+  # [floats, work-group size, parts (sub-buffers)]
+  - [1048576, 128, 4]
+  - [4194304, 256, 8]
+  - [16777216, 64, 16]

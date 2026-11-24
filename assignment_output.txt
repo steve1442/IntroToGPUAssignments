@@ -6,53 +6,26 @@ Already up to date.
 ✅ BUILD completed successfully
  Building
 Build complete. Executable: ./main
-🚀 RUN [1/3]: executing run.sh 512 256
+🚀 RUN [1/3]: executing run.sh 1048576 128 4
 ✅ RUN [1/3] completed successfully
-Running Linear Solver Validation
-   Config: Matrix=1024, Threads=512, Block=256
-   Running 3 test cases
-----------------------------------------
-Matrix Size: 1024
-Config: Threads=512, Block Size Parameter=256
-Residual L2 Norm: 0.000275664
-Matrix Size: 1024
-Config: Threads=512, Block Size Parameter=256
-Residual L2 Norm: 0.000275664
-Matrix Size: 1024
-Config: Threads=512, Block Size Parameter=256
-Residual L2 Norm: 0.000275664
+Running OpenCL Validation
+   Config: N=1048576, Local=128, Parts=4
+Device: NVIDIA GeForce RTX 4070 Ti SUPER
+sum=4194304 want=4194304 scale=0.028 ms
 passed
-🚀 RUN [2/3]: executing run.sh 1024 256
+🚀 RUN [2/3]: executing run.sh 4194304 256 8
 ✅ RUN [2/3] completed successfully
-Running Linear Solver Validation
-   Config: Matrix=1024, Threads=1024, Block=256
-   Running 3 test cases
-----------------------------------------
-Matrix Size: 1024
-Config: Threads=1024, Block Size Parameter=256
-Residual L2 Norm: 0.000365587
-Matrix Size: 1024
-Config: Threads=1024, Block Size Parameter=256
-Residual L2 Norm: 0.000365587
-Matrix Size: 1024
-Config: Threads=1024, Block Size Parameter=256
-Residual L2 Norm: 0.000365587
+Running OpenCL Validation
+   Config: N=4194304, Local=256, Parts=8
+Device: NVIDIA GeForce RTX 4070 Ti SUPER
+sum=16777216 want=16777216 scale=0.046 ms
 passed
-🚀 RUN [3/3]: executing run.sh 2048 256
+🚀 RUN [3/3]: executing run.sh 16777216 64 16
 ✅ RUN [3/3] completed successfully
-Running Linear Solver Validation
-   Config: Matrix=1024, Threads=2048, Block=256
-   Running 3 test cases
-----------------------------------------
-Matrix Size: 1024
-Config: Threads=2048, Block Size Parameter=256
-Residual L2 Norm: 0
-Matrix Size: 1024
-Config: Threads=2048, Block Size Parameter=256
-Residual L2 Norm: 0
-Matrix Size: 1024
-Config: Threads=2048, Block Size Parameter=256
-Residual L2 Norm: 0
+Running OpenCL Validation
+   Config: N=16777216, Local=64, Parts=16
+Device: NVIDIA GeForce RTX 4070 Ti SUPER
+sum=67108864 want=67108864 scale=0.162 ms
 passed
 ✅ RUN summary: 3/3 configurations succeeded
 ℹ️  Full output written to assignment_output.txt
